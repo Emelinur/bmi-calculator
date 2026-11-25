@@ -1,4 +1,3 @@
-:root{
 :root {
   /* Colors */
   --white: hsl(0, 100%, 100%);
@@ -9,68 +8,99 @@
   --blue-300: hsl(209, 69%, 82%);
   --blue-500: hsl(227, 92%, 58%);
   --blue-900: hsl(215, 31%, 21%);
-  
-  /* Gradient (HSL formatına düzeltildi) */
-  --gradient-bg: linear-gradient(290deg, hsl(216, 95%, 92%) 0%, hsla(183, 95%, 92%, 0) 100%);
+
+  --gradient-bg: linear-gradient(
+    290deg,
+    hsl(216, 95%, 92%) 0%,
+    hsla(183, 95%, 92%, 0) 100%
+  );
 
   /* Typography - Font Family & Weights */
-  --font-sans: 'Inter', sans-serif;
+  --font-sans: "Inter", sans-serif;
   --fw-regular: 400;
   --fw-semibold: 600;
   --fw-bold: 700;
 
   /* Typography - Font Sizes (rem) */
-  --fs-preset-1: 4rem;      /* 64px */
-  --fs-preset-2: 3rem;      /* 48px */
-  --fs-preset-3: 2rem;      /* 32px */
-  --fs-preset-4: 1.5rem;    /* 24px */
-  --fs-preset-5: 1.25rem;   /* 20px */
-  --fs-preset-6: 1rem;      /* 16px */
-  --fs-preset-7: 0.875rem;  /* 14px */
+  --fs-preset-1: 4rem; /* 64px */
+  --fs-preset-2: 3rem; /* 48px */
+  --fs-preset-3: 2rem; /* 32px */
+  --fs-preset-4: 1.5rem; /* 24px */
+  --fs-preset-5: 1.25rem; /* 20px */
+  --fs-preset-6: 1rem; /* 16px */
+  --fs-preset-7: 0.875rem; /* 14px */
 
   /* Typography - Line Heights */
-  --lh-tight: 1.1;          /* 110% (Preset 1, 2, 3) */
-  --lh-snug: 1.2;           /* 120% (Preset 4, 5) */
-  --lh-normal: 1.5;         /* 150% (Preset 6, 7) */
+  --lh-tight: 1.1; /* 110% (Preset 1, 2, 3) */
+  --lh-snug: 1.2; /* 120% (Preset 4, 5) */
+  --lh-normal: 1.5; /* 150% (Preset 6, 7) */
 
   /* Typography - Letter Spacing */
-  --ls-tight: -0.05em;      /* -5% (Preset 1, 2, 3, 4, 5) */
-  --ls-normal: 0em;         /* 0% (Preset 6, 7) */
+  --ls-tight: -0.05em; /* -5% (Preset 1, 2, 3, 4, 5) */
+  --ls-normal: 0em; /* 0% (Preset 6, 7) */
 
   /* Spacing System (rem) */
-  --space-0: 0rem;          /* 0px */
-  --space-100: 0.5rem;      /* 8px */
-  --space-200: 1rem;        /* 16px */
-  --space-300: 1.5rem;      /* 24px */
-  --space-400: 2rem;        /* 32px */
-  --space-500: 2.5rem;      /* 40px */
-  --space-600: 3rem;        /* 48px */
-  --space-700: 3.5rem;      /* 56px */
-  --space-900: 4.5rem;      /* 72px */
-  --space-1100: 5.5rem;     /* 88px */
-  --space-1200: 6rem;       /* 96px */
-  --space-1300: 6.5rem;     /* 104px */
-  --space-1600: 8rem;       /* 128px */
-  --space-1800: 9rem;       /* 144px */
+  --space-0: 0rem; /* 0px */
+  --space-100: 0.5rem; /* 8px */
+  --space-200: 1rem; /* 16px */
+  --space-300: 1.5rem; /* 24px */
+  --space-400: 2rem; /* 32px */
+  --space-500: 2.5rem; /* 40px */
+  --space-600: 3rem; /* 48px */
+  --space-700: 3.5rem; /* 56px */
+  --space-900: 4.5rem; /* 72px */
+  --space-1100: 5.5rem; /* 88px */
+  --space-1200: 6rem; /* 96px */
+  --space-1300: 6.5rem; /* 104px */
+  --space-1600: 8rem; /* 128px */
+  --space-1800: 9rem; /* 144px */
 }
-
-}
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  display: flex;
+body {
+  font-family: var(--font-sans);
+  background-color: var(--white);
+  overflow-x: hidden;
 }
 .BodyMass__container{
   display: flex;
   flex-direction: column;
-justify-content: center;
-align-items: center;
- 
+  justify-content: center;
+   align-items: center;
+}
+
+.BodyMass__hero{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.BodyMass__hero-bg{
+  width: 1002px;
+  height: 722px;
+background: var(--gradient-bg);
+border-bottom-right-radius: 40px;
+position: absolute;
+z-index: -1;
 }
 .BodyMass__header{
-background-color: var(--gradient-bg);
+ display: flex;
+  flex-direction: column;
+  gap: var(--space-400);
+
+  
+}
+.BodyMass__logo{
+  width: var(--space-700);
+  height:var(--space-700);
+}
+.BodyMass__title{
+font-size: var(--fs-preset-1);
+letter-spacing: var(--);
+line-height: var(--lh-tight);
+font-weight: var(--fw-semibold);
 }
