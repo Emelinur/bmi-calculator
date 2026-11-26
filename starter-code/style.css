@@ -55,52 +55,78 @@
   --space-1600: 8rem; /* 128px */
   --space-1800: 9rem; /* 144px */
 }
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
   font-family: var(--font-sans);
+  color: var(--grey-500);
   background-color: var(--white);
   overflow-x: hidden;
 }
-.BodyMass__container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-   align-items: center;
+
+.BodyMass__container {
+  width: 100%;
 }
 
-.BodyMass__hero{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.BodyMass__hero {
+  position: relative; 
+  max-width: 1160px;
+  min-height: 737px; 
+  margin: 0 auto;
+  padding: 0 var(--space-300);
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
   align-items: center;
+  gap: var(--space-400);
 }
 
-.BodyMass__hero-bg{
-  width: 1002px;
-  height: 722px;
-background: var(--gradient-bg);
-border-bottom-right-radius: 40px;
-position: absolute;
-z-index: -1;
+.BodyMass__hero-bg {
+  position: absolute;
+  top: 0;
+  left: -116px;
+  width: 72%;
+  height: 737px;
+  background: var(--gradient-bg);
+  border-radius: 0 0 35px 0;
+  z-index: -1;
 }
-.BodyMass__header{
- display: flex;
+
+.BodyMass__header {
+  display: flex;
   flex-direction: column;
   gap: var(--space-400);
+  max-width: 465px;
+}
 
-  
+.BodyMass__logo {
+  width: 64px;
+  height: 64px;
+  margin-bottom: var(--space-700);
 }
-.BodyMass__logo{
-  width: var(--space-700);
-  height:var(--space-700);
+
+.BodyMass__title {
+  font-size: var(--fs-preset-1);
+  letter-spacing: var(--ls-tight);
+  line-height: var(--lh-tight);
+  font-weight: var(--fw-semibold);
+  color: var(--blue-900);
 }
-.BodyMass__title{
-font-size: var(--fs-preset-1);
-letter-spacing: var(--);
-line-height: var(--lh-tight);
-font-weight: var(--fw-semibold);
+
+.BodyMass__description {
+  font-size: var(--fs-preset-6);
+  line-height: var(--lh-normal);
+  color: var(--grey-500);
+}
+.BodyMass__calculator{
+  width: 564px;
+  background-color: var(--white);
+  padding: var(--space-400);
+  border-radius: var(--space-200);
+  display: flex;
+  flex-direction: column;
+  gap:var(--space-400);
+  box-shadow: ;
 }
