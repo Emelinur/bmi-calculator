@@ -128,5 +128,35 @@ body {
   display: flex;
   flex-direction: column;
   gap:var(--space-400);
-  box-shadow: ;
+  box-shadow: 16px 32px 56px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(144, 174, 207, 0.25);
+}
+.BodyMass__form{
+  display: flex;
+  flex-direction: column;
+  gap:var(--space-400);
+}
+.BodyMass__units{
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-1800);
+
+}
+.BodyMass__radio-group input[type="radio" i]
+ {
+width: var(--space-400);
+height:var(--space-400);
+
+}
+.BodyMass__field{
+ display: flex;
+  flex-direction: column;
+  gap:var(--space-100);
+}
+.BodyMass__inputs--metric{
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-400);
+}
+input:not([type="range" i]){
+  padding:var(--space-200);
 }
